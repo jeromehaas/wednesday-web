@@ -1,0 +1,38 @@
+@import 'styles/variables.scss';
+
+.metamask-status {
+
+    border: 2px dashed $grey;
+    padding: 8px 24px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 0;
+
+    &__icon {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 16px solid transparent; 
+    }
+
+	&--connected {
+
+		.metamask-status__icon {
+            border-bottom: 16px solid $black; 
+		}
+
+	}
+
+	&--disconnected {
+
+		.metamask-status__icon {
+            border-bottom: 16px solid $red; 
+		}
+
+	}
+}

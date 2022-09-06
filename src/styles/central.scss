@@ -13,7 +13,8 @@
 @import url('components/01-atoms/heading/heading.scss');
 @import url('components/01-atoms/highlight/highlight.scss');
 @import url('components/01-atoms/list-item/list-item.scss');
-
+@import url('components/01-atoms/metamask-status/metamask-status.scss');
 
 /* MOLECULES */
-@import url('components/desktop-navigation/desktop-navigation.scss');
+@import url('components/03-molecules/desktop-navigation/desktop-navigation.scss');
+@import url('components/03-molecules/hero/hero.scss');

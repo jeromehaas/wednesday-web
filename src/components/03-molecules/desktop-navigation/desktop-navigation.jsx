@@ -1,3 +1,5 @@
+import MetamaskStatus from "components/01-atoms/metamask-status/metamask-status";
+
 const DesktopNavigation = () => {
     
     return (
@@ -19,7 +21,7 @@ const DesktopNavigation = () => {
             </div>
 
             <div className="desktop-navigation__metamask metamask">
-                Metamask
+                <MetamaskStatus />
             </div>
 
             </div>
