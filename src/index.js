@@ -1,3 +1,4 @@
+import 'styles/central.scss';
 import ReactDOM from 'react-dom/client';
 
 const container = document.getElementById('root');
