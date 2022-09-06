@@ -1,0 +1,29 @@
+.desktop-navigation {
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;        
+        justify-content: flex-start;
+        align-items: center;
+        gap: 32px;
+        padding: 0 24px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;;
+    }
+
+    &__metamask {
+        margin-left: auto,
+    }
+
+
+    @media (max-width: 850px) {
+        display: none;
+    }
+
+
+}
