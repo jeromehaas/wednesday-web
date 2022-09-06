@@ -10,3 +10,25 @@
 .anchor {
    font-size: 20px;
 }
+
+.heading {
+
+	&--h1 { 
+		font-size: 72px;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+
+	&--h2 { 
+		font-size: 56px;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+
+	&--h3 { 
+		font-size: 24px;
+		line-height: 1.2px;
+		font-weight: 600;
+	}
+
+}
