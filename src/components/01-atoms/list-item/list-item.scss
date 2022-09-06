@@ -1,0 +1,47 @@
+@import 'styles/variables.scss';
+
+.list-item {
+    
+    color: $black;
+    position: relative;
+    left: 24px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $black;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -24px;
+    }
+
+    &--red { 
+        color: $red; 
+        
+        &::before {
+            background-color: $red;
+        }
+    }
+    
+    &--white {
+        color: $white;
+    
+        &::before {
+            background-color: $white;
+        }
+
+     }
+
+    &--black{
+         color: $black; 
+
+         &::before {
+            background-color: $black;
+        }
+
+    }
+
+}
