@@ -16,9 +16,11 @@
 @import url('components/01-atoms/metamask-status/metamask-status.scss');
 @import url('components/01-atoms/globe/globe.scss');
 @import url('components/01-atoms/cursor/cursor.scss');
+@import url('components/01-atoms/hamburger/hamburger.scss');
 
 /* MOLECULES */
 @import url('components/03-molecules/desktop-navigation/desktop-navigation.scss');
+@import url('components/03-molecules/mobile-navigation/mobile-navigation.scss');
 @import url('components/03-molecules/hero/hero.scss');
 @import url('components/03-molecules/intro/intro.scss');
 @import url('components/03-molecules/telegram-teaser/telegram-teaser.scss');

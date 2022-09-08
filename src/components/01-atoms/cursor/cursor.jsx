@@ -58,6 +58,8 @@
 				document.querySelectorAll('.button').forEach((button) => button.addEventListener('pointerleave', showFollower ));
 				document.querySelectorAll('.anchor').forEach((button) => button.addEventListener('pointerenter', ligthenFollower ));
 				document.querySelectorAll('.anchor').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
+				document.querySelectorAll('.hamburger').forEach((button) => button.addEventListener('pointerenter', ligthenFollower ));
+				document.querySelectorAll('.hamburger').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
         window.addEventListener('pointermove', updateCursorPosition);
     }, []);
 

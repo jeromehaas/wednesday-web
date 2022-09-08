@@ -2,6 +2,7 @@ import 'styles/central.scss';
 import ReactDOM from 'react-dom/client';
 
 import DesktopNavigation from 'components/03-molecules/desktop-navigation/desktop-navigation';
+import MobileNavigation from 'components/03-molecules/mobile-navigation/mobile-navigation';
 import Hero from 'components/03-molecules/hero/hero';
 import Intro from 'components/03-molecules/intro/intro';
 import TelegramTeaser from 'components/03-molecules/telegram-teaser/telegram-teaser';
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(container);
 root.render(
     <div>
         <DesktopNavigation />
-        <Cursor />
+        <MobileNavigation />
         <Hero />
         <Intro />
         <TelegramTeaser />
@@ -27,5 +28,6 @@ root.render(
 		<LaunchCountdown />
 		<LaunchTeaser />
 		<StakingCountdown />
+        <Cursor />
     </div>
 )
