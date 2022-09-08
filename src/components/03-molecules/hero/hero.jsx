@@ -6,8 +6,8 @@ import Globe from 'components/01-atoms/globe/globe';
 const Hero = () => {
 
     return (
-        <div className="hero">
-            <div className="hero__inner">
+        <div className="hero section">
+            <div className="hero__inner section__inner">
                 <div className="hero__content content">
                     <Heading className="content__heading" level="h1">Finally <Highlight color="red">$WEDnesday :)</Highlight></Heading>
                     <Heading className="content__text" level="h3">

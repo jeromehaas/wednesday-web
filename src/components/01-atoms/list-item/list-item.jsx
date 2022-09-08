@@ -1,7 +1,7 @@
-const ListItem = () => {
+const ListItem = ({ className, children }) => {
 
     return (
-        <p className="list-item">This is a list item</p>
+        <p className={` ${ className ? className : '' } list-item` }>{ children }</p>
     )
 
 };

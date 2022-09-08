@@ -5,6 +5,7 @@ import DesktopNavigation from 'components/03-molecules/desktop-navigation/deskto
 import Hero from 'components/03-molecules/hero/hero';
 import Intro from 'components/03-molecules/intro/intro';
 import TelegramTeaser from 'components/03-molecules/telegram-teaser/telegram-teaser';
+import Process from 'components/03-molecules/process/process';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -15,5 +16,6 @@ root.render(
         <Hero />
         <Intro />
         <TelegramTeaser />
+				<Process />
     </div>
 )

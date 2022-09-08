@@ -1,0 +1,88 @@
+@import 'styles/variables.scss';
+
+.process {
+	background-color: $red;
+	border: 10px solid red;
+	
+
+	&__article, .article {
+		display: flex;
+		flex-direction: row;
+		gap: 64px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 64px;
+
+		&__heading, .heading {
+
+			&__top {
+				display: block;
+				font-size: 32px;
+			}
+
+			&__sub {
+				display: block;
+				font-size: 80px;
+			}
+
+		}
+
+		&__list, .list {
+			margin-top: 48px;
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+		&__article, .article {
+			flex-direction: column;
+			gap: 0;
+
+			&__list {
+				margin-top: 16px;
+			}
+
+			&__heading, .heading {
+					
+				&__top, &__sub {
+					display: inline;
+				}
+
+				&__top {
+					margin-right: 1em;
+				}
+
+			}
+			
+		}
+
+	}
+
+	@media (max-width: 400px) {
+
+		&__article, .article {
+			flex-direction: column;
+			gap: 0;
+
+			&__list {
+				margin-top: 16px;
+			}
+
+			&__heading, .heading {
+					
+				&__top, &__sub {
+					display: block;
+				}
+
+				&__top {
+					margin-right: 1em;
+				}
+				
+			}
+			
+		}
+
+	}
+
+}

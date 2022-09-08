@@ -5,7 +5,7 @@ const TelegramTeaser = () => {
 
 	return (
 		<div className="telegram-teaser section">
-			<div className="telegram-teaser__inner section__teaser">
+			<div className="telegram-teaser__inner section__inner">
 				<Heading className="telegram-teaser__heading" level="h2">Be part of this disruptive experiment</Heading>
 				<Button className="telegram-teaser__button">Telegram Chat</Button>	
 			</div>

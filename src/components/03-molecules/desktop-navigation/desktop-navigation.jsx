@@ -3,10 +3,9 @@ import MetamaskStatus from "components/01-atoms/metamask-status/metamask-status"
 const DesktopNavigation = () => {
     
     return (
-        <div className="desktop-navigation">
+        <div className="desktop-navigation section">
 
-            <div className="desktop-navigation__inner">
-
+            <div className="desktop-navigation__inner section__inner">
 
             <div className="desktop-navigation__logo logo">
                 $WED 
