@@ -3,9 +3,9 @@ import Highlight from "components/01-atoms/highlight/highlight";
 import useCountdown from "hooks/use-countdown";
 import { useEffect } from 'react'
 
-const LaunchCountdown = () => {
+const StakingCountdown = () => {
 
-	const { seconds, minutes, hours, days } = useCountdown('2022-09-20'); 
+	const { seconds, minutes, hours, days } = useCountdown('2022-12-06'); 
 
 	useEffect(() => updateUnit(seconds === 0 ? 60 : seconds, 'seconds'), [seconds]);
 	useEffect(() => updateUnit(minutes, 'minutes'), [minutes]);
@@ -19,7 +19,7 @@ const LaunchCountdown = () => {
 	}, []);
 
 	const updateUnit = (value, unit) => {
-		const container = document.querySelector(`.launch-countdown .counter__unit--${ unit } .unit__container`);
+		const container = document.querySelector(`.staking-countdown .counter__unit--${ unit } .unit__container`);
 		const allElements = container.querySelectorAll('.unit__item')
 		const newElement = document.createElement('div');
 		newElement.classList.add('unit__item');
@@ -30,12 +30,12 @@ const LaunchCountdown = () => {
 	
 
 	return (
-		<div className="launch-countdown section">
-			<div className="launch-countdown__inner section__inner">
-				<Heading className="launch-countdown__heading" level="h2">
-					<Highlight color="red" borderColor="white">$WED launch </Highlight>countdown
+		<div className="staking-countdown section">
+			<div className="staking-countdown__inner section__inner">
+				<Heading className="staking-countdown__heading" level="h2">
+					<Highlight color="black" borderColor="white">$WED auto </Highlight>staking ends
 				</Heading>
-				<div className="launch-countdown__counter counter">
+				<div className="staking-countdown__counter counter">
 					<div className="counter__inner">
 						<div className="counter__unit counter__unit--days unit">
 							<div className="unit__container container"></div>
@@ -61,4 +61,4 @@ const LaunchCountdown = () => {
 
 };
 
-export default LaunchCountdown;
+export default StakingCountdown;

@@ -12,7 +12,7 @@ const Model = () => {
 
   return (
     <mesh ref={ mesh } scale={ 1.25 }>
-      <sphereBufferGeometry args={ [2, 32, 32] } />
+      <sphereGeometry args={ [2, 32, 32] } />
       <meshBasicMaterial color="#c6c6c6" wireframe={ true } />
     </mesh>
   );
