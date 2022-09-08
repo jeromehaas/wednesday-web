@@ -7,6 +7,7 @@ import Intro from 'components/03-molecules/intro/intro';
 import TelegramTeaser from 'components/03-molecules/telegram-teaser/telegram-teaser';
 import Process from 'components/03-molecules/process/process';
 import TokenTeaser from 'components/03-molecules/token-teaser/token-teaser';
+import LaunchCountdown from 'components/03-molecules/launch-countdown/launch-countdown';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -19,5 +20,6 @@ root.render(
         <TelegramTeaser />
 				<Process />
 				<TokenTeaser />
+				<LaunchCountdown />
     </div>
 )

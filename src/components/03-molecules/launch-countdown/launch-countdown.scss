@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+
+.launch-countdown {
+	background-color: $red;
+	
+	&__heading {
+		color: $white;
+		text-align: center;
+	}
+
+}
