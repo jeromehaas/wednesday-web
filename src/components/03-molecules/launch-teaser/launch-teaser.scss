@@ -1,0 +1,21 @@
+.launch-teaser {
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	
+	&__heading {
+		text-align: center;
+		margin-bottom: 32px;
+	}
+
+	&__button {
+		margin: 0 auto;
+
+	}
+
+}

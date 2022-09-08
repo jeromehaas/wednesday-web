@@ -7,6 +7,7 @@ import Intro from 'components/03-molecules/intro/intro';
 import TelegramTeaser from 'components/03-molecules/telegram-teaser/telegram-teaser';
 import Process from 'components/03-molecules/process/process';
 import TokenTeaser from 'components/03-molecules/token-teaser/token-teaser';
+import LaunchTeaser from 'components/03-molecules/launch-teaser/launch-teaser';
 import LaunchCountdown from 'components/03-molecules/launch-countdown/launch-countdown';
 import StakingCountdown from 'components/03-molecules/staking-countdown/staking-countdown';
 
@@ -22,6 +23,7 @@ root.render(
 				<Process />
 				<TokenTeaser />
 				<LaunchCountdown />
+				<LaunchTeaser />
 				<StakingCountdown />
     </div>
 )
