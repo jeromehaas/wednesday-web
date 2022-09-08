@@ -26,7 +26,7 @@ const MetamaskStatus = ({ className }) => {
 		}, []);
 		
     return (
-        <a className={`${ className ? className : '' } metamask-status ${ account ? 'metamask-status--connected' : 'metamask-status--disconnected' } metamask-status`} onClick={ connectWallet }>
+        <a className={`${ className ? className : '' } metamask-status ${ account ? 'metamask-status--connected' : 'metamask-status--disconnected' } metamask-status`} onClick={ connectWallet } href="/">
             <i className="metamask-status__icon"></i>
             { account ? 'Connected' : 'Not Connected' }
         </a>

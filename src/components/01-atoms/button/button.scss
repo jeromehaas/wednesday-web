@@ -7,31 +7,16 @@
     display: inline-block;
     transition: all 0.2s ease;
     cursor: pointer;
-    
-    &::before {
-        content: "";
-        display: block;
-        border: 2px solid $black;
-        position: absolute; 
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        border-radius: inherit;
-        transition: all 0.2s ease;
-    }
+		text-decoration: none;
+		color: $black;
+		background-color: $white;
+		line-height: 1.5;
+		padding-top: 12px;
+		border: 2px solid $black;
 
-    &:hover {
-
-        letter-spacing: 2px;
-        
-        &::before {
-            transform: scale(1.05);
-        }
-        
+		  &:hover {
+        letter-spacing: 1px;
+        transform: scaleX(1.05);
     }
 
 }

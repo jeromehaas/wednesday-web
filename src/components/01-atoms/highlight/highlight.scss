@@ -2,23 +2,40 @@
 @import 'styles/mixins.scss';
 
 .highlight {
-     text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+		 color: $white;
 
-    &--black { 
-        color: $white;
-        @include text-outline($black);
-    }
+		 &__color {
+			 
+			 &--black { 
+				 color: $white;
+				}
+				
+				&--white { 
+					color: $black;
+				}
+				
+				&--red { 
+        color: $red;
+			}
+			
+		}
 
-    &--white { 
-        color: $black;
-        border-color: $white; 
-        @include text-outline($white);
-    }
-
-    &--red { 
-        color: $white;
-        border-color: $red;
-        @include text-outline($red);
-     }
-
-}
+		&__border-color {
+			 
+			&--black { 
+				@include text-outline($black);
+			 }
+			 
+			 &--white { 
+				 border-color: $white; 
+				 @include text-outline($white);
+			 }
+			 
+			 &--red { 
+			 border-color: $red;
+			 @include text-outline($red);
+		 }
+		 
+	 }
+	
+	}

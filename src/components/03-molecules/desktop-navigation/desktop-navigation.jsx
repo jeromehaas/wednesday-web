@@ -13,11 +13,11 @@ const DesktopNavigation = () => {
             </div>
 
             <div className="desktop-navigation__links links">
-                <a className="links__item anchor" href="#">About</a>
-                <a className="links__item anchor" href="#">Experiment</a>
-                <a className="links__item anchor" href="#">Roadmap</a>
-                <a className="links__item anchor" href="#">Taxes</a>
-                <a className="links__item anchor" href="#">Tokenomics</a>
+                <a className="links__item anchor" href="/">About</a>
+                <a className="links__item anchor" href="/">Experiment</a>
+                <a className="links__item anchor" href="/">Roadmap</a>
+                <a className="links__item anchor" href="/">Taxes</a>
+                <a className="links__item anchor" href="/">Tokenomics</a>
             </div>
 
             <div className="desktop-navigation__metamask metamask">

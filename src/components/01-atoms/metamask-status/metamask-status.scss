@@ -11,6 +11,8 @@
     align-items: center;
     gap: 16px;
     flex-grow: 0;
+		text-decoration: none;
+		color: $black;
 
     &__icon {
         width: 0;

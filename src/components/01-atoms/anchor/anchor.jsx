@@ -1,7 +1,7 @@
-const Anchor = ({ className, children, onClick }) => {
+const Anchor = ({ className, children, onClick, href }) => {
 
     return (
-        <a className={` ${ className ? className : '' } anchor `} onClick={ onClick } >{ children }</a>
+        <a className={` ${ className ? className : '' } anchor `} href={ href ? href : '/' } onClick={ onClick } >{ children }</a>
     );
 
 };

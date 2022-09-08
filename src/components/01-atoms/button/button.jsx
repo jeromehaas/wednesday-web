@@ -1,7 +1,7 @@
-const Button = ({ className, children }) => {
+const Button = ({ className, children, href }) => {
 
     return (
-        <a className={` ${className ? className : ''} button `}>{ children }</a>
+        <a className={` ${className ? className : ''} button `} href={ href ? href : '/' }>{ children }</a>
     );
 
 };

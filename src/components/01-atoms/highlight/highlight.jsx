@@ -1,7 +1,7 @@
-const Highlight = ({ className, children }) => {
+const Highlight = ({ className, children, color, borderColor }) => {
 
     return (
-        <span className={` ${ className ? className : '' } highlight highlight--black` }>{ children }</span>
+        <span className={` ${ className ? className : '' } highlight ${  color ? `highlight highlight__color--${ color }` : ''} ${ borderColor ? `highlight__border-color--${ borderColor }`: ''} `}>{ children }</span>
     )
 
 };
