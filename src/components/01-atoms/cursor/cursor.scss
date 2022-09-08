@@ -1,7 +1,8 @@
 @import 'styles/variables.scss';
 
 .cursor {
-        z-index: 20;
+      z-index: 20;
+			pointer-events: none;
 
 		&__main {
 			position: fixed;
@@ -13,7 +14,7 @@
 			transform: translate(-50%, -50%);
 			border-radius: 50%;
 			z-index: 20;
-            border: 1px solid $red;
+      border: 2px solid $red;
 		}
 		
 		&__follower {
@@ -23,9 +24,23 @@
 			width: 32px;
 			height: 32px;
 			transform: translate(-50%, -50%);
-			background-color: $red;
 			border-radius: 50%;
-            border: 1px solid $white;
+      border: 2px solid $white;
+			z-index: 15;
+			background-color: $red;
+			transition: all 0.4s ease;
+
+			&--hidden {
+				width: 0px;
+				height: 0px;
+				border: 0;
+			}
+
+			&--light {
+				width: 64px;
+				height: 64px;
+				background-color: transparentize($grey, 0.8);
+			}
 		}
 		
 }

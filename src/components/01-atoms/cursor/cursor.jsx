@@ -3,11 +3,6 @@
 
  const Cursor = () => {
 
-    // const [ position, setPosition ] = useState({
-    //     x: null,
-    //     y: null
-    // });
-
     const mainRef = useRef();
     const followerRef = useRef(); 
     const position = useRef({
@@ -16,35 +11,55 @@
     });
 
     const updateCursorPosition = (event) => {
-        console.log('updated');
         position.current.x = event.clientX;
         position.current.y = event.clientY;
-        console.log(position);
         moveMain();
         moveFollower();
     };
 
     const moveMain = () => {
-        console.log('move the main');
         gsap.to(mainRef.current, {
             x: position.current.x,
             y: position.current.y,
-            duration: 0.1,
+						ease: 'power1.easeIn',
+            duration: 0.05,
         });
     };
 
     const moveFollower = () => {
-        console.log('move the main');
         gsap.to(followerRef.current, {
             x: position.current.x,
             y: position.current.y,
-            duration: 0.6,
+						ease: 'power1.inOut',
+						duration: 0.1
         });
     };
 
+		const hideFollower = () => {
+			followerRef.current.classList.add('cursor__follower--hidden');
+		};
+
+		const showFollower = () => {
+			setTimeout(() => {
+				followerRef.current.classList.remove('cursor__follower--hidden');
+			}, 500);
+		};
+
+		const ligthenFollower = () => {
+			followerRef.current.classList.add('cursor__follower--light');
+		}
+
+		const normalizeFollower = () => {
+			followerRef.current.classList.remove('cursor__follower--light');
+		}
+
     useEffect(() => {
+				document.querySelectorAll('.button').forEach((button) => button.addEventListener('pointerenter', hideFollower ));
+				document.querySelectorAll('.button').forEach((button) => button.addEventListener('pointerleave', showFollower ));
+				document.querySelectorAll('.anchor').forEach((button) => button.addEventListener('pointerenter', ligthenFollower ));
+				document.querySelectorAll('.anchor').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
         window.addEventListener('pointermove', updateCursorPosition);
-    });
+    }, []);
 
 
     return (

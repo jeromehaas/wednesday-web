@@ -10,10 +10,13 @@
         padding: 12px 24px;
     }
 
-    &__links {
+    &__links, .links {
         display: flex;
         flex-direction: row;
-        gap: 16px;;
+
+				&__item {
+					padding: 8px;
+				}
     }
 
     &__metamask {
@@ -21,7 +24,7 @@
     }
 
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         display: none;
     }
 

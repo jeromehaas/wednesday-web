@@ -7,7 +7,7 @@ const LaunchCountdown = () => {
 
 	const { seconds, minutes, hours, days } = useCountdown('2023-11-11'); 
 
-	useEffect(() => updateUnit(seconds === 0 ? 60 : seconds, 'seconds'), [seconds]);
+	useEffect(() => updateUnit(seconds, 'seconds'), [seconds]);
 	useEffect(() => updateUnit(minutes, 'minutes'), [minutes]);
 	useEffect(() => updateUnit(hours, 'hours'), [hours]);
 	useEffect(() => updateUnit(days, 'days'), [days]);

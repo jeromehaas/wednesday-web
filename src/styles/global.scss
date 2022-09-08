@@ -1,5 +1,13 @@
+@import 'styles/variables.scss';
+
 * {
 	cursor: none
+}
+
+*::selection {
+	background-color: transparentize($red, 0.8);
+	color: inherit;
+	opacity: 0.20;
 }
 
 .section {
