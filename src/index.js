@@ -10,6 +10,7 @@ import TokenTeaser from 'components/03-molecules/token-teaser/token-teaser';
 import LaunchTeaser from 'components/03-molecules/launch-teaser/launch-teaser';
 import LaunchCountdown from 'components/03-molecules/launch-countdown/launch-countdown';
 import StakingCountdown from 'components/03-molecules/staking-countdown/staking-countdown';
+import Cursor from 'components/01-atoms/cursor/cursor';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -17,13 +18,14 @@ const root = ReactDOM.createRoot(container);
 root.render(
     <div>
         <DesktopNavigation />
+        <Cursor />
         <Hero />
         <Intro />
         <TelegramTeaser />
-				<Process />
-				<TokenTeaser />
-				<LaunchCountdown />
-				<LaunchTeaser />
-				<StakingCountdown />
+		<Process />
+		<TokenTeaser />
+		<LaunchCountdown />
+		<LaunchTeaser />
+		<StakingCountdown />
     </div>
 )

@@ -1,0 +1,31 @@
+@import 'styles/variables.scss';
+
+.cursor {
+        z-index: 20;
+
+		&__main {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			background-color: $white;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			z-index: 20;
+            border: 1px solid $red;
+		}
+		
+		&__follower {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 32px;
+			height: 32px;
+			transform: translate(-50%, -50%);
+			background-color: $red;
+			border-radius: 50%;
+            border: 1px solid $white;
+		}
+		
+}
