@@ -60,6 +60,8 @@
 				document.querySelectorAll('.anchor').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
 				document.querySelectorAll('.hamburger').forEach((button) => button.addEventListener('pointerenter', ligthenFollower ));
 				document.querySelectorAll('.hamburger').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
+				document.querySelectorAll('.metamask-status').forEach((button) => button.addEventListener('pointerenter', ligthenFollower ));
+				document.querySelectorAll('.metamask-status').forEach((button) => button.addEventListener('pointerleave', normalizeFollower ));
         window.addEventListener('pointermove', updateCursorPosition);
     }, []);
 

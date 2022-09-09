@@ -8,7 +8,7 @@ const Hamburger = ({ status, onClick }) => {
 	const lottie = Lottie;
 
 	useEffect(() => {
-		hamburgerRef.current.setPlayerDirection( status === 'inactive' ? 1 : -1)
+		hamburgerRef.current.setPlayerDirection( status === 'active' ? 1 : -1)
 		hamburgerRef.current.play();
 	}, [ status, hamburgerRef ]);
 

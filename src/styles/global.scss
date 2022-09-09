@@ -19,3 +19,15 @@
 	}
 
 }
+
+@media (max-width: 650px) {
+
+	.section {
+
+		&__inner {
+			padding: 24px;
+		}
+		
+	}
+
+}
