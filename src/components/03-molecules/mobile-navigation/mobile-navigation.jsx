@@ -54,7 +54,7 @@ const MobileNavigation = () => {
 				
 				<div className="mobile-navigation__bar bar section">
 					<div className="bar__inner section__inner">
-						<p className="bar__logo">$WED</p>
+						<p className="bar__logo" onClick={ (event) => scrollToSection(event, '.hero')}>$WED</p>
 						<Hamburger status={ status } onClick={ toggleStatus } />
 					</div>
 				</div>

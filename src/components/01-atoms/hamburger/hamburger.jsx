@@ -17,7 +17,7 @@ const Hamburger = ({ status, onClick }) => {
 				<Player 
 					ref={ hamburgerRef }
 					autoplay={ false }
-					speed= { 3 }
+					speed= { 1 }
 					direction={ 1 }
 					keepLastFrame= { true }
 					loop={ false }
